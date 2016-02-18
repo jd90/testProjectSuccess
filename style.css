@@ -4,7 +4,7 @@
     font-family: Verdana, sans-serif;
 }
 
-h1 {
+#title {
 
     color:darkred;
 
@@ -16,9 +16,3 @@ h5  {
 
 }
 
-.Id1    {
-
-    font-size: x-large;
-
-
-}
