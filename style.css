@@ -14,7 +14,8 @@ body{
 
 #icon{
 
-    width:50px;
+    width:30%;
+    height:30%;
 }
 header{
     background-color: darkgray;
