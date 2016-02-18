@@ -12,6 +12,11 @@ body{
     background-color: cornsilk;
 }
 
+#icon{
+
+    float:left;
+
+}
 #title {
 
     color:darkred;
