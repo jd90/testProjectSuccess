@@ -14,8 +14,10 @@ body{
 
 #icon{
 
-
-
+    display: block;
+    max-width:600px;
+    width: auto;
+    height: auto;
 
 }
 #title {
