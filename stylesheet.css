@@ -1,0 +1,66 @@
+* {
+    font-family: Verdana, sans-serif;
+}
+
+#title {
+
+    color: aqua;
+
+}
+
+h1 {
+    font-size: 270%;
+}
+
+h3 {
+    margin-top: -30px;
+}
+
+#AddItem {
+    margin-left: 75px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#Column1 {
+    float: left;
+    width: 300px;
+}
+
+#Column2 {
+}
+
+#Footer {
+    color: grey;
+    margin-left: 15px;
+}
+
+#Header {
+    margin-left: 15px;
+}
+
+#Row1 {
+    width: 600px;
+}
+
+#Row2 {
+    clear: both;
+}
+
+.BorderShadow {
+    border: solid 2px black;
+    box-shadow: 2px 2px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.field {
+    width: 300px;
+}
+.field2 {
+    width: 150px;
+}
+
+.HBar {
+    background-color: orange;
+    height: 10px;
+}
