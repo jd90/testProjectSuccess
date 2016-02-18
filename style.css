@@ -13,9 +13,12 @@
 
     text-align:center;
 }
-#Column1    {
-    width: 200px;
-    height: 200px;
+#Column1    img {
+    display: block;
+    max-width:230px;
+    max-height:95px;
+    width: auto;
+    height: auto;
 }
 h5  {
 
