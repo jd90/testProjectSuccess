@@ -20,6 +20,9 @@ body{
     height: auto;
 
 }
+header{
+    background-color: darkgray;
+}
 #title {
 
     color:darkred;
