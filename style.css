@@ -30,6 +30,7 @@ header{
 }
 h5  {
     text-align: center;
+    float: none;
 }
 
 #linkOne {
