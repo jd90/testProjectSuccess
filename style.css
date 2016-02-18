@@ -14,10 +14,7 @@ body{
 
 #icon{
 
-    display: block;
-    max-width:100px;
-    width: auto;
-    height: auto;
+    width:50px;
 }
 header{
     background-color: darkgray;
