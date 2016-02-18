@@ -34,7 +34,12 @@ h5  {
 
 }
 
-
+img{
+    display: block;
+    max-width:600px;
+    width: auto;
+    height: auto;
+}
 h5  {
 
     color: red;
