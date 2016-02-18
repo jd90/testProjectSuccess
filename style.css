@@ -16,6 +16,7 @@ body{
 
     width:20%;
     height:20%;
+    float: left;
 }
 header{
     background-color: darkgray;
