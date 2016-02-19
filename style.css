@@ -23,13 +23,11 @@ section{
     background-color: #ecebf4;
 
 }
-.nav{
 
-    padding-left: 50px;
-}
 #nav{
     width: 180px;
     float: left;
+    text-align: center;
 }
 #homepage{
 
