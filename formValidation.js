@@ -1,7 +1,7 @@
 function validate(form) {
 
     isValid = true;
-    message = "These are required fields: \n";
+    message = "ERROR SUBMITTING! \n\n These are required fields: \n\n";
     message2 = "\n Please correct before submitting.";
     errors = "";
 
@@ -27,7 +27,6 @@ function validate(form) {
     if (isValid) {
         return true;
     } else {
-        alert("hi");
         alert(message + errors +message2);
         return false;
     }
