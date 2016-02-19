@@ -10,10 +10,13 @@ header {
 body{
 
     background-color: lightgrey;
-
+    width: 800px;
+    margin-left: auto;
+    margin-right:auto;
 }
 
 section{
 
     background-color: aliceblue;
 }
+
