@@ -27,6 +27,7 @@ function validate(form) {
     if (isValid) {
         return true;
     } else {
+        alert("hi");
         alert(message + errors +message2);
         return false;
     }
