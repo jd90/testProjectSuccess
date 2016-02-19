@@ -16,6 +16,15 @@ h1,h5{
 
     margin:0;
 }
+h5{
+    text-decoration: none;
+
+}
+.selected{
+
+    color: #b091ff;
+
+}
 body{
 
     background-color: #adacbc;
