@@ -25,7 +25,7 @@ section{
 }
 
 #nav{
-    align-content: center;
+    text-align: center;
     width: 180px;
     float: left;
 }
