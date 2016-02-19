@@ -7,21 +7,21 @@ function validate(form) {
 
     if (form.address.value == "") {
         isValid = false;
-        errors += " address \n";
+        errors += " Address \n";
     }
 
     if (form.image.value == "") {
         isValid = false;
-        errors += " image link \n";
+        errors += " Image link \n";
     }
 
     if (form.description.value == "") {
         isValid = false;
-        errors += " description \n";
+        errors += " Description \n";
     }
     if (form.bbName.value == "") {
         isValid = false;
-        errors += "News summary required \n";
+        errors += " B&B name \n";
     }
 
     if (isValid) {
