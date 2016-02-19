@@ -17,7 +17,11 @@ body{
     margin-left: auto;
     margin-right:auto;
 }
+section{
 
+    background-color: greenyellow;
+
+}
 
 #nav{
 
