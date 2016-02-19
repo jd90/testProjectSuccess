@@ -24,6 +24,12 @@ section{
 
 }
 
+h3{
+
+    margin:0;
+    padding:0;
+}
+
 #nav{
     width: 180px;
     float: left;
