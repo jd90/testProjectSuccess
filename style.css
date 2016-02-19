@@ -7,6 +7,10 @@ header {
     text-align: center;
     padding-top: 30px;
 }
+
+#title{
+    color: white;
+}
 h1,h5{
 
     margin:0;
