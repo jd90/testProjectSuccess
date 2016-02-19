@@ -6,7 +6,7 @@ header {
     color: lightgrey;
     text-align: center;
 }
-h1{
+h1,h5{
 
     margin:0;
 }
@@ -35,5 +35,5 @@ section{
     float:right;
 }
 #icon{
-    width:500px;
+    width:600px;
 }
