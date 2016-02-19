@@ -29,6 +29,9 @@ section{
     float: left;
     text-align: center;
 }
+h3{
+    border:black;
+}
 #homepage{
 
     width:600px;
