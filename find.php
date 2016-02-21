@@ -58,10 +58,6 @@ NEWHTML;
 
                             ?>
 
-
-                            <option value="The Grange">The Grange</option>
-                            <option value="Heaven">Heaven</option>
-                            <option value="Faulty Towers">Faulty Towers</option>
                         </select>
                     </td>
                 </tr>
