@@ -40,7 +40,7 @@
                     );
 
                     if ($db->connect_errno) {
-        die('Connection failed:'.connect_error);
+        die("Connection failed: [` . %db->connect_error .`]");
         }
 
         //Step 3: Execute the SQL query
