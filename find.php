@@ -33,7 +33,7 @@
                     //Steps 1&2: Connect to database server and the database
 
         $db = new mysqli(
-                        'tcp:bbsqldb.database.windows.net,1433',    //localhost
+                        'bbsqldb.database.windows.net',    //localhost
                         'teamdsqldb',    //username
                         'Sql20022016*',    //password
                         'SQL_BB' //database
