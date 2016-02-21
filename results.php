@@ -50,11 +50,8 @@
                 $newhtml =
                     <<<NEWHTML
                     <div class="resultblock">
-    <p><strong>ID: </strong></p>
-    <p >{$row[bbid]}</p>
-    <p><strong>Name: </strong></p>
-    <p >{$row[bbname]}</p>
-    <p><strong>Address: </strong></p>
+
+    <p><strong>Your search of: {$row[bbname]} has the address: </strong></p>
     <p >{$row[address]}</p>
 </div>
 
