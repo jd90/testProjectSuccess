@@ -35,8 +35,9 @@ $conn = new PDO ( "sqlsrv:server = tcp:bbsqldb.database.windows.net,1433; Databa
 
 $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
+
         try{
-            $st = $conn-> query('SELECT * FROM `B&B`');
+            $st = $conn-> query('SELECT * FROM B&B');
 
             foreach($st->fetchAll() as $row)
             {
