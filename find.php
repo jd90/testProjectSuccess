@@ -30,62 +30,21 @@
         <button id="button1">Display</button>
 
         <?php
-                    //Steps 1&2: Connect to database server and the database
 
-        $db = new mysqli(
-                        "bbsqldb.database.windows.net",    //localhost
-                        "teamdsqldb",    //username
-                        "Sql20022016*",    //password
-                        "SQL_BB",           //database
-                        "1433"          //port?
-                    );
+        $mysql = new PDO(
+            'mysql:host=bbsqldb.database.windows.net;port=1433;dbname=SQL_BB',
+            'teamdsqldb',
+            'Sql20022016*'
+        );
 
-                    if ($db->connect_errno) {
-        die("Connection failed: [`.$db->connect_error.`]");
+        if ($mysql->connect_errno) {
+            die("Connection failed: [`.$db->connect_error.`]");
         }
-
-        //Step 3: Execute the SQL query
-
-        //if ($categoryset) {
-        $sql = "SELECT * FROM `B&B`";
-       // } else {
-        $sql = "SELECT * FROM `B&B`";
-      //  }
-        $result = $db->query($sql);
-
-        //Step 4: Process a set of results
-
-        while ($row = $result->fetch_array()) {
-
-        //Step 5: Process an individual (row) result
-
-        $newhtml =
-
-<<<NEWHTML
-
-        <article>
-        <p><strong>ID: </strong></p>
-            <p >{$row['bbid']}</p>
-        <p><strong>Name: </strong></p>
-            <p >{$row['bbname']}</p>
-        <p><strong>Address: </strong></p>
-            <p >{$row['address']}</p>
-        <p></p>
-        <p></p>
-        <p></p>
-         </article>
-
-
-NEWHTML;
-
-        print($newhtml);
+        else{
+            die("ya dancer!");
 
         }
 
-        //Clean up
-
-        $result->close();
-        $db->close();
 
         ?>
 
