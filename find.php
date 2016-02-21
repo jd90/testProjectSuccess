@@ -36,7 +36,8 @@
                         "bbsqldb.database.windows.net",    //localhost
                         "teamdsqldb",    //username
                         "Sql20022016*",    //password
-                        "SQL_BB" //database
+                        "SQL_BB",           //database
+                        "1433"          //port?
                     );
 
                     if ($db->connect_errno) {
