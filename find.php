@@ -33,14 +33,14 @@
                     //Steps 1&2: Connect to database server and the database
 
         $db = new mysqli(
-                        'bbsqldb.database.windows.net',    //localhost
-                        'teamdsqldb',    //username
-                        'Sql20022016*',    //password
-                        'SQL_BB' //database
+                        "bbsqldb.database.windows.net",    //localhost
+                        "teamdsqldb",    //username
+                        "Sql20022016*",    //password
+                        "SQL_BB" //database
                     );
 
                     if ($db->connect_errno) {
-        die("Connection failed: [` . %db->connect_error .`]");
+        die("Connection failed: [`.$db->connect_error.`]");
         }
 
         //Step 3: Execute the SQL query
