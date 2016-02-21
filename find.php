@@ -43,14 +43,13 @@ $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
                 $newhtml =
 <<<NEWHTML
 
-<article>
     <p><strong>ID: </strong></p>
     <p >{$row[bbid]}</p>
     <p><strong>Name: </strong></p>
     <p >{$row[bbname]}</p>
     <p><strong>Address: </strong></p>
     <p >{$row[address]}</p>
-</article>
+
 
 NEWHTML;
                 print($newhtml);
