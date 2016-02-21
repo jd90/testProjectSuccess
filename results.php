@@ -43,7 +43,7 @@
 
 
         try{
-            $st = $conn-> query('SELECT * FROM [B&B] WHERE [bbname] = '.$bbName);
+            $st = $conn-> query("SELECT * FROM [B&B] WHERE [bbname] = '$bbName'");
 
             foreach($st->fetchAll() as $row) {
 

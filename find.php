@@ -37,9 +37,9 @@
                     </td>
                     <td>
                         <select id="name" name="name">
-                            <option value="The Grange">Cheap</option>
-                            <option value="Heaven">Just Right</option>
-                            <option value="Faulty Towers">Pricey</option>
+                            <option value="The Grange">The Grange</option>
+                            <option value="Heaven">Heaven</option>
+                            <option value="Faulty Towers">Faulty Towers</option>
                         </select>
                     </td>
                 </tr>
