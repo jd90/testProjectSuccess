@@ -27,6 +27,7 @@
     <div class="main">
         <h3 class="pagetitle" >Here are your search results...</h3>
 
+        <a  href="find.php"><button>New Search</button></a>
 
         <?php
 
@@ -70,7 +71,6 @@ NEWHTML;
 
         ?>
 
-        <a  href="find.php"><button id="newsearchbutton" >New Search</button></a>
     </div>
 
     <footer id="Footer">
