@@ -33,10 +33,10 @@
                     //Steps 1&2: Connect to database server and the database
 
         $db = new mysqli(
-                        'localhost',    //localhost
-                        'studentid',    //username
-                        'studentid',    //password
-                        'dbUSERNAME_db' //database
+                        'tcp:bbsqldb.database.windows.net,1433',    //localhost
+                        'teamdsqldb',    //username
+                        'Sql20022016*',    //password
+                        'SQL_BB' //database
                     );
 
                     if ($db->connect_errno) {
