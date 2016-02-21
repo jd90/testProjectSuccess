@@ -37,6 +37,28 @@
                     </td>
                     <td>
                         <select id="name" name="name">
+
+                            <?php
+                            $conn = new PDO ( "sqlsrv:server = tcp:bbsqldb.database.windows.net,1433; Database = SQL_BB", "teamdsqldb", "Sql20022016*");
+                            $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+                            try{
+                            $st = $conn-> query("SELECT * FROM [B&B]");
+                            foreach($st->fetchAll() as $row) {
+                            $newhtml =
+<<<NEWHTML
+                            <option value="{$row[bbname]}">{$row[bbname]}</option>
+NEWHTML;
+                            print($newhtml);
+                            }
+
+                            }
+
+                            catch(PDOException $e)
+                            {print"$e";}
+
+                            ?>
+
+
                             <option value="The Grange">The Grange</option>
                             <option value="Heaven">Heaven</option>
                             <option value="Faulty Towers">Faulty Towers</option>
