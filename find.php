@@ -56,9 +56,9 @@ $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
         function handle_sql_errors($query, $error_message)
         {
-            echo '<pre>';
+            echo 'HI';
             echo $query;
-            echo '</pre>';
+
             echo $error_message;
             die;
         }
