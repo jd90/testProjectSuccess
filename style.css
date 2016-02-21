@@ -71,7 +71,9 @@ form{
 }
 .resultblock{
 
-
+    border:solid;
+    border-width: medium;
+    border-color: #b091ff;
     float:left;
 
 }
