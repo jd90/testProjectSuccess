@@ -35,14 +35,33 @@ $conn = new PDO ( "sqlsrv:server = tcp:bbsqldb.database.windows.net,1433; Databa
 
 $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
+        try{
+            $st = $conn-> query('SELECT * FROM `B&B`');
 
-
-        $st = $conn-> query('SELECT * FROM `B&B`');
-
-        foreach($st->fetchAll() as $row)
-        {
-            print"{$row['bbname']}
+            foreach($st->fetchAll() as $row)
+            {
+                print"{$row['bbname']}
  goes with{$row['planet']} <br/>\n";}
+
+        }
+        catch(PDOException $e)
+        {
+            handle_sql_errors($st, $e->getMessage());
+        }
+
+
+
+
+
+
+        function handle_sql_errors($query, $error_message)
+        {
+            echo '<pre>';
+            echo $query;
+            echo '</pre>';
+            echo $error_message;
+            die;
+        }
 
         ?>
 
