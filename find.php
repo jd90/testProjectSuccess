@@ -41,13 +41,14 @@ $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
             foreach($st->fetchAll() as $row)
             {
-                print"{$row[bbname]}
- goes with{$row[bbid]} <br/>\n";}
+                print"{$row[`bbname`]}
+                        {$row[bbid]} <br/>\n";
+            }
 
         }
         catch(PDOException $e)
         {
-            handle_sql_errors($st, $e->getMessage());
+            print"$e->getMessage()";
         }
 
 
