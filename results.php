@@ -25,14 +25,14 @@
     </div>
 
     <div class="main">
-        <h3 class="pagetitle" >Let's Find You A B&B...</h3>
+        <h3 class="pagetitle" >Here are your search results...</h3>
 
 
         <?php
 
-$conn = new PDO ( "sqlsrv:server = tcp:bbsqldb.database.windows.net,1433; Database = SQL_BB", "teamdsqldb", "Sql20022016*");
+        $conn = new PDO ( "sqlsrv:server = tcp:bbsqldb.database.windows.net,1433; Database = SQL_BB", "teamdsqldb", "Sql20022016*");
 
-$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+        $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
 
         try{
@@ -41,8 +41,8 @@ $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
             foreach($st->fetchAll() as $row) {
 
                 $newhtml =
-<<<NEWHTML
-<div class="resultblock">
+                    <<<NEWHTML
+                    <div class="resultblock">
     <p><strong>ID: </strong></p>
     <p >{$row[bbid]}</p>
     <p><strong>Name: </strong></p>
