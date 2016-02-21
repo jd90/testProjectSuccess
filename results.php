@@ -70,6 +70,7 @@ NEWHTML;
 
         ?>
 
+        <button onSubmit="find.php" >New Search</button>
     </div>
 
     <footer id="Footer">
