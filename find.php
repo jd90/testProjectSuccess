@@ -37,11 +37,11 @@ $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
 
         try{
-            $st = $conn-> query('SELECT * FROM [B&B]');
+            $st = $conn-> query('SELECT * FROM [`B&B`]');
 
             foreach($st->fetchAll() as $row)
             {
-                print"{$row[`bbname`]}
+                print"{$row[bbname]}
                         {$row[bbid]} <br/>\n";
             }
 
