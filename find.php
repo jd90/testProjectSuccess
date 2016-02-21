@@ -31,20 +31,18 @@
 
         <?php
 
-        $mysql = new PDO(
-            'mysql:host=bbsqldb.database.windows.net;port=1433;dbname=SQL_BB',
-            'teamdsqldb',
-            'Sql20022016*'
-        );
+$conn = new PDO ( "sqlsrv:server = tcp:bbsqldb.database.windows.net,1433; Database = SQL_BB", "teamdsqldb", "Sql20022016*");
 
-        if ($mysql->connect_errno) {
-            die("Connection failed: [`.$db->connect_error.`]");
-        }
-        else{
-            die("ya dancer!");
+$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
-        }
 
+
+        $st = $conn-> query('SELECT * FROM `B&B`');
+
+        foreach($st->fetchAll() as $row)
+        {
+            print"{$row['bbname']}
+ goes with{$row['planet']} <br/>\n";}
 
         ?>
 
