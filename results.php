@@ -70,7 +70,7 @@ NEWHTML;
 
         ?>
 
-        <a id="newsearchbutton" href="find.php"><button " >New Search</button></a>
+        <a  href="find.php"><button id="newsearchbutton" >New Search</button></a>
     </div>
 
     <footer id="Footer">
