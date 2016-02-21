@@ -58,9 +58,11 @@ $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
 
 NEWHTML;
+                print($newhtml);
+
             }
 
-            print($newhtml);
+
         }
 
         catch(PDOException $e)
