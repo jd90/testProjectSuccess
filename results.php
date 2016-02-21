@@ -52,7 +52,7 @@
                     <<<NEWHTML
                     <div class="resultblock">
 
-    <p>Your search of: <strong>{$row[bbname]}</strong> has the address: </p>
+    <p>According to our database, your search of: <strong>{$row[bbname]}</strong> has the address: </p>
     <p >{$row[address]}</p>
 </div>
 
