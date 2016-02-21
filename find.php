@@ -41,7 +41,7 @@ $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
             foreach($st->fetchAll() as $row) {
 
                 $newhtml =
-                    <<<NEWHTML
+<<<NEWHTML
 
 <article>
     <p><strong>ID: </strong></p>
@@ -50,11 +50,7 @@ $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
     <p >{$row[bbname]}</p>
     <p><strong>Address: </strong></p>
     <p >{$row[address]}</p>
-    <p></p>
-    <p></p>
-    <p></p>
 </article>
-
 
 NEWHTML;
                 print($newhtml);
