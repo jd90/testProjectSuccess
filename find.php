@@ -37,7 +37,9 @@ $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
 
         try{
-            $st = $conn-> query('SELECT * FROM [`B&B`]');
+
+
+            $st = $conn-> query('SELECT * FROM [B&B]');
 
             foreach($st->fetchAll() as $row)
             {
@@ -46,24 +48,12 @@ $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
             }
 
         }
+
+
         catch(PDOException $e)
-        {
-            print"$e";
-        }
+        {print"$e";}
 
 
-
-
-
-
-        function handle_sql_errors($query, $error_message)
-        {
-            echo 'HI';
-            echo $query;
-
-            echo $error_message;
-            die;
-        }
 
         ?>
 
