@@ -37,18 +37,31 @@ $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
 
         try{
-
-
             $st = $conn-> query('SELECT * FROM [B&B]');
 
-            foreach($st->fetchAll() as $row)
-            {
-                print"{$row[bbname]}
-                        {$row[bbid]} <br/>\n";
+            foreach($st->fetchAll() as $row) {
+
+                $newhtml =
+                    <<<NEWHTML
+
+<article>
+    <p><strong>ID: </strong></p>
+    <p >{$row[bbid]}</p>
+    <p><strong>Name: </strong></p>
+    <p >{$row[bbname]}</p>
+    <p><strong>Address: </strong></p>
+    <p >{$row[address]}</p>
+    <p></p>
+    <p></p>
+    <p></p>
+</article>
+
+
+NEWHTML;
             }
 
+            print($newhtml);
         }
-
 
         catch(PDOException $e)
         {print"$e";}
