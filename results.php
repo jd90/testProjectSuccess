@@ -53,7 +53,7 @@
                     <div class="resultblock">
 
     <p>According to our database, your search of: <strong>{$row[bbname]}</strong> has the address: </p>
-    <p >{$row[address]}</p>
+    <p ><strong>{$row[address]}</strong></p>
 </div>
 
 NEWHTML;
