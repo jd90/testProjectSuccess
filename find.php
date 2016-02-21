@@ -27,7 +27,6 @@
     <div class="main">
         <h3 class="pagetitle" >Let's Find You A B&B...</h3>
 
-        <button id="button1">Display</button>
 
         <?php
 
