@@ -72,6 +72,7 @@ form{
 .resultblock{
 
     border:solid;
+    padding:5px;
     border-width: medium;
     border-color: #b091ff;
     float:left;
